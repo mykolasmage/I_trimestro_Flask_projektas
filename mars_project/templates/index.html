@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Mars Age Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Mars Age Calculator</h1>
+
+        <form action="/results" method="post">
+            <label for="birthdate">Input your birthdate</label>
+            <input type="date" name="birthdate" id="birthdate" required>
+            <button type="submit">Convert</button>
+        </form>
+
+        <button onclick="window.location.href='/history'">View history</button>
+    </div>
+
+</body>
+</html>
